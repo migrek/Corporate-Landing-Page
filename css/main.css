@@ -68,17 +68,27 @@ html, body {
 	flex-direction: column;
 	align-content: center;
 	justify-content: center;
+	padding-right: 40%;
 }
+
 .capture-name-block {
 	color: #ff6d6d;
 	font-size: 16px;
-	letter-spacing: 0.02;
+	letter-spacing: 0.02em;
 	text-transform: uppercase;
+	margin-bottom: 20px;
 }
 
-.capture-block-about {
+.capture-h1 {
 	color: #282828;
 	font-size: 40px;
+	line-height: 50px;
+	margin-bottom: 50px;
+}
+
+.capture-h3 {
+	color: #282828;
+	font-size: 22px;
 	line-height: 50px;
 	margin-bottom: 50px;
 }
@@ -94,4 +104,52 @@ html, body {
 	font-size: 16px;
 	line-height: 26px;
 	margin-bottom: 40px;
+	text-align: center;
+}
+
+.after-block-styled {
+	position: relative;
+}
+.after-block-styled::after {
+	content: "";
+	position: absolute;
+	height: 100%;
+	width: 40%;
+	top:0;
+	right: 0;
+	background:linear-gradient(130deg, #ededed 50%, #fb8d8c 50%);
+}
+
+.aligh-left {
+	text-align: left;
+}
+
+.features-block {
+	display: flex;
+	flex-direction: column;
+	background-color: #f6f5f3;
+	min-height: 675px;
+}
+
+.container-feature-items {
+	display: flex;
+	flex-direction: row;	
+}
+
+.feature-item {
+	display: flex;
+	flex-direction: column;
+	max-width: 365px;
+	margin: 0 8px;
+	align-items: center;
+}
+
+.feature-item-img {
+	border-radius: 50%;
+	width: 65px;
+	height: 65px;
+}
+
+.feature-item-img-photos {
+	background-image: url(/images/feature-photos.png)
 }

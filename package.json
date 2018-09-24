@@ -17,5 +17,15 @@
     "webpack-dev-server": "^3.1.8",
     "webpack-livereload-plugin": "^2.1.1"
   },
-  "dependencies": {}
+  "dependencies": {
+    "node-sass": "^4.9.3"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/migrek/Corporate-Landing-Page.git"
+  },
+  "bugs": {
+    "url": "https://github.com/migrek/Corporate-Landing-Page/issues"
+  },
+  "homepage": "https://github.com/migrek/Corporate-Landing-Page#readme"
 }
