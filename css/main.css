@@ -1,50 +1,3 @@
-/* http://meyerweb.com/eric/tools/css/reset/ 
-   v2.0 | 20110126
-   License: none (public domain)
-*/
-
-html, body, div, span, applet, object, iframe,
-h1, h2, h3, h4, h5, h6, p, blockquote, pre,
-a, abbr, acronym, address, big, cite, code,
-del, dfn, em, img, ins, kbd, q, s, samp,
-small, strike, strong, sub, sup, tt, var,
-b, u, i, center,
-dl, dt, dd, ol, ul, li,
-fieldset, form, label, legend,
-table, caption, tbody, tfoot, thead, tr, th, td,
-article, aside, canvas, details, embed, 
-figure, figcaption, footer, header, hgroup, 
-menu, nav, output, ruby, section, summary,
-time, mark, audio, video {
-	margin: 0;
-	padding: 0;
-	border: 0;
-	font-size: 100%;
-    vertical-align: baseline;
-}
-/* HTML5 display-role reset for older browsers */
-article, aside, details, figcaption, figure, 
-footer, header, hgroup, menu, nav, section {
-	display: block;
-}
-body {
-	line-height: 1;
-}
-ol, ul {
-	list-style: none;
-}
-blockquote, q {
-	quotes: none;
-}
-blockquote:before, blockquote:after,
-q:before, q:after {
-	content: '';
-}
-table {
-	border-collapse: collapse;
-	border-spacing: 0;
-}
-
 /* CUSTOM STYLES */
 html, body {
     margin: 0;
@@ -84,13 +37,14 @@ html, body {
 	font-size: 40px;
 	line-height: 50px;
 	margin-bottom: 50px;
+	text-align: center;
 }
 
 .capture-h3 {
 	color: #282828;
 	font-size: 22px;
-	line-height: 50px;
-	margin-bottom: 50px;
+	margin-bottom: 20px;
+	text-align: center;
 }
 
 .dotted-after-content::after {
@@ -125,15 +79,24 @@ html, body {
 }
 
 .features-block {
+	background: url(/images/feature-bg-cup.png) no-repeat 85% 100%,       
+				url(/images/feature-bg-pen-holder.png) no-repeat 20% 0%,       
+				url(/images/feature-bg-earphones.png) no-repeat 85% 0%;
+	background-color: #f6f5f3;
+} 
+
+.container-feature-info {
 	display: flex;
 	flex-direction: column;
-	background-color: #f6f5f3;
-	min-height: 675px;
+	padding: 140px 0;
+	align-items: center;
 }
 
 .container-feature-items {
 	display: flex;
-	flex-direction: row;	
+	flex-direction: row;
+	margin-top: 40px;	
+	justify-content: center;
 }
 
 .feature-item {
@@ -148,8 +111,82 @@ html, body {
 	border-radius: 50%;
 	width: 65px;
 	height: 65px;
+	margin-bottom: 30px;
 }
 
 .feature-item-img-photos {
-	background-image: url(/images/feature-photos.png)
+	background-image: url(/images/feature-photos.png);
 }
+
+.feature-item-img-fly {
+	background-image: url(/images/feature-fly.png);
+}
+
+.feature-item-img-lamp {
+	background-image: url(/images/feature-lamp.png);
+}
+
+.designe-block {
+	min-height: 550px;
+	background: linear-gradient(45deg, #ff8a8a 35%,  #ffffff 0%);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.designe-block-item {
+	max-width: 520px;
+}
+
+.laptop-block {
+	height: 359px;
+	width: 612px;
+	background-image: url(/images/laptop.png)
+}
+
+.wrapper-client-about {
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+}
+
+.client-about-item {
+	display: flex;
+	flex-direction: column;
+	max-width: 360px;
+	margin: 0 15px;
+	align-items: center;
+}
+
+.photo-client {
+	width: 76px;
+	height: 76px;
+	border: 2px solid #1d1e24;
+	border-radius: 1px;
+}
+
+
+
+@media screen and (max-width: 1200px) {
+
+}
+	
+@media screen and (max-width: 979px) {
+
+}
+	
+@media screen and (max-width: 649px) {
+	.features-block {
+		background: #f6f5f3;
+	} 
+	.container-feature-items {
+		flex-direction: column;
+	}
+	
+}
+	
+@media screen and (max-width: 479px) {
+
+}
+	
