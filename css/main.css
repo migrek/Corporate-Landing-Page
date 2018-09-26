@@ -9,19 +9,20 @@ html, body {
 	height: 813px;
 	background-color: aqua;
 }
-.standart-width {
-	max-width: 1170px;
-	margin: auto;
+
+.bg-block-styled {
+	background:	linear-gradient(-40deg, #ff8a8a 30%,  #ececec 0%);
 }
 
-.main-block-design {
+.block-about-platform {
 	min-height: 700px;
 	max-width: 570px;
+	padding: 0 150px;
 	display: flex;
 	flex-direction: column;
 	align-content: center;
 	justify-content: center;
-	padding-right: 40%;
+	background-color: #ffffff;
 }
 
 .capture-name-block {
@@ -59,19 +60,6 @@ html, body {
 	line-height: 26px;
 	margin-bottom: 40px;
 	text-align: center;
-}
-
-.after-block-styled {
-	position: relative;
-}
-.after-block-styled::after {
-	content: "";
-	position: absolute;
-	height: 100%;
-	width: 40%;
-	top:0;
-	right: 0;
-	background:linear-gradient(130deg, #ededed 50%, #fb8d8c 50%);
 }
 
 .aligh-left {
@@ -145,18 +133,26 @@ html, body {
 	background-image: url(/images/laptop.png)
 }
 
+.client-info {
+	min-height: 648px;
+	background-image: url(/images/bg-client-info.jpg);
+	background-repeat: repeat-y;
+}
+
 .wrapper-client-about {
 	display: flex;
 	flex-direction: row;
 	justify-content: center;
+	padding-top: 105px;
 }
 
 .client-about-item {
 	display: flex;
 	flex-direction: column;
-	max-width: 360px;
+	max-width: 350px;
 	margin: 0 15px;
 	align-items: center;
+	text-align: center;
 }
 
 .photo-client {
@@ -166,6 +162,38 @@ html, body {
 	border-radius: 1px;
 }
 
+.client-name {
+	color: #ffffff;
+	font-size: 22px;
+	letter-spacing: 0.04em;
+	line-height: 50px;
+}
+
+.client-status {
+	color: #ff6d6d;
+	font-size: 16px;
+	margin-bottom: 25px;
+}
+
+.client-quote {
+	color: #ffffff;
+	font-size: 16px;
+	font-style: italic;
+	line-height: 26px;
+}
+
+.sponsor-links {
+	display: flex;
+	flex-direction: row;
+}
+
+.sponsor-links-href {
+	margin: 0 50px;
+}
+
+.sponsor-links-img {
+	margin: auto;
+}
 
 
 @media screen and (max-width: 1200px) {
@@ -173,6 +201,9 @@ html, body {
 }
 	
 @media screen and (max-width: 979px) {
+	.laptop-block {
+		display: none;
+	} 
 
 }
 	
@@ -184,6 +215,11 @@ html, body {
 		flex-direction: column;
 	}
 	
+	.wrapper-client-about {
+		flex-direction: column;
+		align-items: center;
+		margin-bottom: 30px;
+	}
 }
 	
 @media screen and (max-width: 479px) {
