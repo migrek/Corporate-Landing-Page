@@ -195,8 +195,130 @@ html, body {
 	margin: auto;
 }
 
+.awesome-features-block {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;	
+}
+
+.container-awesome-feature-info {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	max-width: 660px;
+}
+
+.brouser-img {
+	width: 792px;
+	height: 359px;
+	margin-top: 70px;
+}
+
+.alt-color-text {
+	color: #ffffff;
+} 
+
+.form-block {
+	background-color: #323969;
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+	padding: 90px 0;
+}
+
+.form-capture {
+	display: flex;
+	flex-direction: column;
+	justify-content: center;
+	align-items: center;
+}
+
+.form-fields {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+	align-items: center;
+	margin: 50px auto;
+	max-width: 1133px;	
+}
+
+.form-field-input {
+	width: 260px;
+	height: 50px;
+	padding-left: 30px;
+	color: #f6f5f3;
+	font-size: 16px;
+	text-transform: uppercase;
+	background-color: #474d78;
+	border: 1px solid #999cb4;
+	border-radius: 1px;
+	box-sizing: border-box;
+	margin-right: 30px;
+}
+
+.form-field-submit {
+	width: 260px;
+	height: 50px;
+	text-align: center;
+	color: #f6f5f3;
+	font-size: 16px;
+	text-transform: uppercase;
+	background-color: #ff6d6d;
+	border-radius: 1px;
+	border: none;
+	cursor: pointer;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.form-field-submit::before {
+    position: absolute;
+    right: 0px;
+    top:40px;
+    content: url(../images/arrow.png);
+}
+
+.alt-color-text-grey {
+	color: #f6f5f3;
+} 
+
+.margin-null {
+	margin: 0;
+}
+
+.contact-block {
+	display: flex;
+	padding: 90px 0;
+	background: linear-gradient(-135deg, #ff8a8a 20%,  #ffffff 0%);
+	display: flex;
+	flex-direction: row;
+	justify-content: center;
+	align-items: center;
+}
+
+.contact-block-item {
+	display: flex;
+	flex-direction: column;
+}
+
+.contact-block-item-capture {
+	color: #282828;
+	font-size: 22px;
+}
+
 
 @media screen and (max-width: 1200px) {
+	.form-fields {
+		flex-direction: column;
+	}
+
+	.form-field-input {
+		margin-right: 0;
+		margin-bottom: 15px;
+	}
 
 }
 	
@@ -204,6 +326,15 @@ html, body {
 	.laptop-block {
 		display: none;
 	} 
+
+	.designe-block {
+		background: #ffffff;
+	}
+
+	.brouser-img {
+		display: none;
+	} 
+
 
 }
 	
