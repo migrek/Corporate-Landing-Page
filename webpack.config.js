@@ -27,8 +27,17 @@ module.exports={
           includePaths: []
         }
       }]
-    }]
+    },
+    {
+      test: /\.(gif|svg|jpg|png)$/,
+      loader: "file-loader",
+    }
+  
+  ]
   },
+
+
+
   plugins: [
     new LiveReloadPlugin({}),
     new webpack.WatchIgnorePlugin([
